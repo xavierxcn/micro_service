@@ -10,6 +10,9 @@ spec:
   - image: nginx
     name: pod1
     resources: {}
+    command:
+      - sh
+      - -c
+      - sheep 1d
   dnsPolicy: ClusterFirst
   restartPolicy: Always
-status: {}
